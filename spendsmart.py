@@ -114,7 +114,7 @@ if select == "Prediction":
 if select=='News':
     st.title("News")
     q=st.text_input("Enter the keyword :",value='bitcoin')
-    url=f'https://newsapi.org/v2/everything?q={q}&sortBy=publishedAt&apiKey=6f737b4068ca40e9b77eefc66b716478&language=en'
+    url=f'https://newsapi.org/v2/everything?q={q}&sortBy=publishedAt&apiKey=NEWS_API_KEY&language=en'
     r=requests.get(url)
     r=r.json()
     articles=r['articles']
